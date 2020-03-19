@@ -83,16 +83,33 @@
                 <a href="https://htmlacademy.ru" class="button">HTML Academy</a>
             </p>
         </footer>
-        <section class="modal-modallogin">
+        <section class="modal modal-login">
             <h2>Личный кабинет</h2>
-            <!-- Здесь будет форма -->
-            <span class="modal-close">x</span>
+            <p>Введите свой логин и пароль.</p>
+            <form action="#" method="POST" class="login-form">
+                <p>
+                    <label for="user-login" class="visually-hidden">
+                        <input id="user-login" class="login-icon-user" type="text" name="login" placeholder="Логин">
+                    </label>
+                </p>
+                <p>    
+                    <label for="user=password">
+                        <input id="user-password" type="password" class="login-icon-password" name="password" placeholder="Пароль">
+                    </label>
+                </p>
+                <p class="login-password-info">
+                    <label class="login-checkbox">
+                    <input name="remember" type="checkbox" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>               
+                    Запомните меня
+                    </label>
+                    <a href="#" class="restore">Я забыл пароль!</a>                    
+                </p>
+                <button class="button" type="submit">Войти</button>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
         </section>
-    
-        <section class="visually-hidden">
-            <h2>Как до нас добраться?</h2>
-            <span class="modal-close">x</span>
-        </section>
+
     </main>
 </body>
 </html>
