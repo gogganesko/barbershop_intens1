@@ -69,11 +69,13 @@
 
             <section class="gallery">
                 <h2>Фотогалерея</h2>
-                <figure class="gallery-content">
-                    <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
-                </figure>
-                    <button class="button gallery-button gallery-button-back">Назад</button>
-                    <button class="button gallery-button gallery-button-forward">Вперед</button>
+                <div class="gallery-container">
+                    <figure class="gallery-content">
+                        <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+                    </figure>
+                        <button class="button gallery-button gallery-button-back">Назад</button>
+                        <button class="button gallery-button gallery-button-next">Вперед</button>
+                </div> 
             </section>
         </div>
         <div class="index-columns">
@@ -109,7 +111,7 @@
                         <label for="appointment-name">Ваше имя</label>
                         <input id="appointment-name" type="text" name="name" value="" placeholder="Борода">
                     </p>
-                    <p>
+                    <p class="appointment-item">
                         <label for="appointment-phone">Телефон</label>
                         <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
                     </p>
@@ -128,9 +130,9 @@
                 <div class="footer-social">
                     <b>Давайте дружить!</b>
                     <ul>
-                        <li><a href="#" class="social-button">Вконтакте</a></li>
-                        <li><a href="#" class="social-button">Фейсбук</a></li>
-                        <li><a href="#" class="social-button">Инстаграм</a></li>
+                        <li><a href="#" class="social-button"><span class="visually-hidden">Вконтакте</span></a></li>
+                        <li><a href="#" class="social-button"><span class="visually-hidden">Фейсбук</span></a></li>
+                        <li><a href="#" class="social-button"><span class="visually-hidden">Инстаграм</span></a></li>
                     </ul>
                 </div>
                 <p class="footer-copyright">
